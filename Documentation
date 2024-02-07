@@ -12,3 +12,9 @@ Duration: INT
 Phone: NCHAR(11)
 Age: INT CHECK (Age BETWEEN 20 AND 35)
 Cost: Money
+-------------------------------------------Tracks-----------------------------------------
+Web Development, Power BI, Full stack, DevOps, Mobile Applications, Cyber Security Associate, Interior Design
+
+----------------------------------------------Branches---------------------------------------
+Smart Village, New Capital, Cairo University, Alexandria, Assiut, Aswan, Beni Suef, Fayoum, Ismailia, Mansoura, Menofia, Minya, Qena, Sohag
+
