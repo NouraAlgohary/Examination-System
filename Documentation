@@ -9,3 +9,5 @@ PK or ID: INT
 Gender: VARCHAR(6)
 Date: DATETIME
 Duration: INT
+Phone: NCHAR(11)
+Age: [Age] [int] NULL CHECK ([Age] BETWEEN 20 AND 35)
