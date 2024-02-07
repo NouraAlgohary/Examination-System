@@ -4,7 +4,7 @@ Weak Entity: 3
 ------------------------------------------------
 FirstName: VCHAR(20)
 LastName: VCHAR(20)
-String: VCHAR(50)
+String: VCHAR(50), VCHAR((255)
 PK or ID: INT
 Gender: VARCHAR(6)
 Date: DATETIME
