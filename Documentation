@@ -129,3 +129,31 @@ Collaborate with vendors and third-party partners to assess and improve overall 
 
 TOOLS
 Nessus, SIEM, Splunk, GRC tools, KnowBe4, CyberArk, Qualys, Threat Intelligence platforms, Forensic tools, RiskWatch
+--------------------------------------------------------------------------------------------------
+Full Stack
+Implement RESTful APIs and integrate them seamlessly with frontend interfaces,
+Develop scalable and maintainable database structures for efficient data management,
+Collaborate with cross-functional teams to deliver full-stack solutions aligned with project goals,
+Optimize application performance and troubleshoot issues across the entire stack,
+Design and implement user authentication and authorization systems,
+Ensure code quality and conduct regular code reviews for best practices adherence,
+Utilize modern technologies and frameworks to enhance full-stack development processes,
+Implement responsive designs for seamless user experiences on various devices,
+Continuously update and improve application features based on user feedback and market trends,
+
+TOOLS
+VSCode, Git, Express.js, MongoDB, Agile, Postman, Passport.js, ESLint, React.js, Bootstrap, Jira
+--------------------------------------------------------------------------------------------------
+DevOps
+Implement infrastructure as code (IaC) for scalable and reproducible environments,
+Manage and optimize cloud-based resources for cost-effectiveness and performance,
+Implement continuous integration and continuous delivery (CI/CD) pipelines for rapid development cycles,
+Collaborate with development and operations teams to streamline DevOps processes.
+Monitor and troubleshoot system performance, identifying and resolving bottlenecks.
+Implement security best practices for infrastructure and application deployments.
+Provide documentation and training on DevOps processes and tools.
+Utilize containerization technologies like Docker for application deployment.
+Ensure high availability and disaster recovery measures are in place for critical systems.
+
+TOOLS
+Jenkins, Terraform, AWS, GitLab CI/CD, Docker, Grafana, Ansible, Confluence, Kubernetes, Veeam
