@@ -1,8 +1,9 @@
 Entity: 11
-Relaitionships: 13
+Relationships: 13
 Weak Entity: 3
 ------------------------------------------------
 String: VCHAR(50)
 PK or ID: INT
 Gender: VARCHAR(6)
 Date: DATETIME
+Duration: INT
