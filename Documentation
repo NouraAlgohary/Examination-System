@@ -149,12 +149,28 @@ DevOps
 Implement infrastructure as code (IaC) for scalable and reproducible environments,
 Manage and optimize cloud-based resources for cost-effectiveness and performance,
 Implement continuous integration and continuous delivery (CI/CD) pipelines for rapid development cycles,
-Collaborate with development and operations teams to streamline DevOps processes.
-Monitor and troubleshoot system performance, identifying and resolving bottlenecks.
-Implement security best practices for infrastructure and application deployments.
-Provide documentation and training on DevOps processes and tools.
-Utilize containerization technologies like Docker for application deployment.
-Ensure high availability and disaster recovery measures are in place for critical systems.
+Collaborate with development and operations teams to streamline DevOps processes,
+Monitor and troubleshoot system performance, identifying and resolving bottlenecks,
+Implement security best practices for infrastructure and application deployments,
+Provide documentation and training on DevOps processes and tools,
+Utilize containerization technologies like Docker for application deployment,
+Ensure high availability and disaster recovery measures are in place for critical systems
 
 TOOLS
 Jenkins, Terraform, AWS, GitLab CI/CD, Docker, Grafana, Ansible, Confluence, Kubernetes, Veeam
+--------------------------------------------------------------------------------------------------
+Mobile Applications
+Implement responsive and adaptive designs for mobile application interfaces,
+Integrate backend services and databases to support mobile app functionalities,
+Optimize mobile applications for performance, responsiveness, and user engagement,
+Collaborate with UX/UI designers to create visually appealing and user-friendly interfaces,
+Implement push notifications and other mobile-specific features,
+Conduct thorough testing to identify and resolve mobile app bugs and issues,
+Stay updated on mobile app development trends and emerging technologies,
+Work closely with clients to gather requirements and provide technical solutions,
+Publish and maintain mobile applications on app stores, ensuring compliance with guidelines
+
+TOOLS
+Xcode, Flutter, Firebase, Android Studio, Sketch, OneSignal, Appium, Apple Developer Forums, Zeplin, Google Play Console
+--------------------------------------------------------------------------------------------------
+
