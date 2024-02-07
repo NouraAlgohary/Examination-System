@@ -21,56 +21,103 @@ Smart Village, New Capital, Cairo University, Alexandria, Assiut, Aswan, Beni Su
 -------------------------------------------Courses-----------------------------------------------
 (24 ROW)
 **Web Development:**
-Course 1: "Responsive Web Design",Course 2: "JavaScript and Front-End Frameworks",Course 3: "Server-Side Development with Node.js and Express"
+Responsive Web Design,
+JavaScript and Front-End Frameworks,
+Server-Side Development with Node.js and Express, 
+HTML5 and CSS3 Fundamentals,
+JavaScript for Web Developers
+
 **Power BI:**
-Course 1: "Introduction to Power BI and Data Visualization",Course 2: "Power Query and Data Transformation",Course 3: "Advanced Power BI DAX (Data Analysis Expressions)"
+Introduction to Power BI and Data Visualization, 
+Power Query and Data Transformation,
+Advanced Power BI DAX,
+Advanced Data Modeling with Power BI,
+Power Query and Power BI Desktop Mastery
+
 **Full Stack Development:**
-Course 1: "Fundamentals of Full Stack Development",Course 2: "Building RESTful APIs with Node.js and Express",Course 3: "Front-End Frameworks and Modern JavaScript Libraries"
+Introduction to Full Stack Development: Frontend and Backend Basics,
+Database Design and Management for Full Stack Developers,
+Building RESTful APIs with Express and MongoDB,
+React.js and Node.js Integration for Full Stack Applications,
+Full Stack Deployment and Scaling Strategies
+
 **DevOps:**
-Course 1: "Introduction to DevOps Practices",Course 2: "Continuous Integration and Deployment (CI/CD)",Course 3: "Containerization with Docker and Kubernetes"
-**Mobile Applications:**
-Course 1: "Mobile App Development with React Native",Course 2: "iOS App Development with Swift",Course 3: "Android App Development with Kotlin",
-**Cyber Security Associate:**
-Course 1: "Introduction to Cybersecurity Principles",Course 2: "Network Security and Encryption",Course 3: "Incident Response and Forensics"
-**Interior Design:**
-Course 1: "Fundamentals of Interior Design",Course 2: "Color Theory and Application in Interior Design",Course 3: "Space Planning and Furniture Design"
-**Soft Skills:**
-Leadership and Team Collaboration, Time Management and Productivity, Critical Thinking and Problem-Solving
+Principles and Practices,
+Version Control with Git and GitHub,
+Continuous Integration with Jenkins,
+Containerization with Docker and Kubernetes,
+Infrastructure as Code (IaC) using Terraform and Ansible
+
+**Mobile Applications Track:**
+
+Introduction to Mobile App Development: Choosing the Right Platform,
+iOS App Development with Swift and Xcode,
+Android App Development with Kotlin and Android Studio,
+Cross-Platform Mobile Development with Flutter,
+Mobile App Testing and Deployment Strategies
+
+**Cyber Security Associate Track:**
+Threats and Countermeasures
+Network Security and Firewalls,
+Ethical Hacking and Penetration Testing,
+Incident Response and Digital Forensics,
+Security Policies and Compliance
+
+**Interior Design Track:**
+Principles and Elements
+Color Theory and Application in Interior Design,
+Furniture and Space Planning,
+Lighting Design for Interiors,
+Sustainable Design and Green Building Practices in Interior Design
 -----------------------------------------------Topic------------------------------------------------------
-**Web Development:**
-Responsive Web Design: Adaptive
-JavaScript and Front-End Frameworks: Interactivity
-Server-Side Development with Node.js and Express: Backend
+**Web Development Track:**
+HTML5 and CSS3 Fundamentals: Structure
+JavaScript for Web Developers: Interactivity
+React.js: User-Interfaces
+Node.js and Express: Backend
+Advanced Web Development with Angular: Framework
 
-**Power BI:**
-Introduction to Power BI and Data Visualization: Visualization
-Power Query and Data Transformation: Data Cleaning
-Advanced Power BI DAX (Data Analysis Expressions): Analytics
+**Power BI Track:**
+Power BI Basics: Visualization
+Advanced Data Modeling with Power BI: Modeling
+Power Query and Power BI Desktop Mastery: Transformation
+Power BI Service: Collaboration
+DAX Programming for Power BI: Formulas
 
-**Full Stack Development:**
-Fundamentals of Full Stack Development: Comprehensive
-Building RESTful APIs with Node.js and Express: APIs
-Front-End Frameworks and Modern JavaScript Libraries: Frameworks
+**Full Stack Track:**
+Introduction to Full Stack Development: Overview
+Database Design and Management for Full Stack Developers: Databases
+Building RESTful APIs with Express and MongoDB: APIs
+React.js and Node.js Integration for Full Stack Applications: Integration
+Full Stack Deployment and Scaling Strategies: Deployment
 
-**DevOps:**
-Introduction to DevOps Practices: Collaboration
-Continuous Integration and Deployment (CI/CD): Automation
-Containerization with Docker and Kubernetes: Containerization
+**DevOps Track:**
+Introduction to DevOps: Principles
+Version Control with Git and GitHub: VersionControl
+Continuous Integration with Jenkins: CI/CD
+Containerization with Docker and Kubernetes: Containers
+Infrastructure as Code (IaC) using Terraform and Ansible: IaC
 
-**Mobile Applications:**
-Mobile App Development with React Native: Cross-Platform
-iOS App Development with Swift: iOS
-Android App Development with Kotlin: Android
+**Mobile Applications Track:**
+Introduction to Mobile App Development: Overview
+iOS App Development with Swift and Xcode: iOS
+Android App Development with Kotlin and Android Studio: Android
+Cross-Platform Mobile Development with Flutter: CrossPlatform
+Mobile App Testing and Deployment Strategies: Testing
 
-**Cyber Security Associate:**
-Introduction to Cybersecurity Principles: Security Basics
-Network Security and Encryption: Encryption
-Incident Response and Forensics: Forensics
+**Cyber Security Associate Track:**
+Cybersecurity Fundamentals: Security
+Network Security and Firewalls: Networking
+Ethical Hacking and Penetration Testing: EthicalHacking
+Incident Response and Digital Forensics: IncidentResponse
+Security Policies and Compliance: Compliance
 
-**Interior Design:**
-Fundamentals of Interior Design: Design Principles
-Color Theory and Application in Interior Design: Color Schemes
-Space Planning and Furniture Design: Spatial Design
+**Interior Design Track:**
+Introduction to Interior Design: Basics
+Color Theory and Application in Interior Design: Color
+Furniture and Space Planning: Furniture
+Lighting Design for Interiors: Lighting
+Sustainable Design and Green Building Practices in Interior Design: Sustainability
 
 **Softskills**
 Leadership and Team Collaboration, Time Management and Productivity, Critical Thinking and Problem-Solving
