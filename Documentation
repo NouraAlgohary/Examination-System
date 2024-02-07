@@ -86,3 +86,18 @@ Tables
 StrudentID ---> 1:1000
 InstructorID ----> 1:200
 TrackID ----> 1:7
+--------------------------------------------------------------------------------------------------
+Power BI:
+Design and implement Power BI dashboards for comprehensive business analytics.
+Extract, transform, and load data from various sources into Power BI for analysis.
+Create interactive and dynamic reports to present complex data in a comprehensible manner.
+Collaborate with stakeholders to identify key performance indicators for reporting.
+Develop data models to support efficient querying and analysis in Power BI.
+Ensure data accuracy and integrity while building Power BI solutions.
+Provide training and support for end-users to maximize the utilization of Power BI.
+Optimize Power BI reports for performance and responsiveness.
+Conduct regular data audits to maintain the quality and relevance of reports.
+
+TOOLS
+Power BI, Power Query, DAX, Power BI Desktop, Power BI Service, SQL Server, Tabular Editor, M Query, Power Automate, Power BI Gateway
+--------------------------------------------------------------------------------------------------
