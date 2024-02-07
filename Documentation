@@ -28,12 +28,51 @@ Course 1: "Fundamentals of Full Stack Development",Course 2: "Building RESTful A
 **DevOps:**
 Course 1: "Introduction to DevOps Practices",Course 2: "Continuous Integration and Deployment (CI/CD)",Course 3: "Containerization with Docker and Kubernetes"
 **Mobile Applications:**
-Course 1: "Mobile App Development with React Native"
-Course 2: "iOS App Development with Swift",Course 3: "Android App Development with Kotlin",Cyber Security Associate:
+Course 1: "Mobile App Development with React Native",Course 2: "iOS App Development with Swift",Course 3: "Android App Development with Kotlin",
+**Cyber Security Associate:**
 Course 1: "Introduction to Cybersecurity Principles",Course 2: "Network Security and Encryption",Course 3: "Incident Response and Forensics"
 **Interior Design:**
 Course 1: "Fundamentals of Interior Design",Course 2: "Color Theory and Application in Interior Design",Course 3: "Space Planning and Furniture Design"
+**Soft Skills:**
+Leadership and Team Collaboration, Time Management and Productivity, Critical Thinking and Problem-Solving
 -----------------------------------------------Topic------------------------------------------------------
+**Web Development:**
+Responsive Web Design: Adaptive
+JavaScript and Front-End Frameworks: Interactivity
+Server-Side Development with Node.js and Express: Backend
+
+**Power BI:**
+Introduction to Power BI and Data Visualization: Visualization
+Power Query and Data Transformation: Data Cleaning
+Advanced Power BI DAX (Data Analysis Expressions): Analytics
+
+**Full Stack Development:**
+Fundamentals of Full Stack Development: Comprehensive
+Building RESTful APIs with Node.js and Express: APIs
+Front-End Frameworks and Modern JavaScript Libraries: Frameworks
+
+**DevOps:**
+Introduction to DevOps Practices: Collaboration
+Continuous Integration and Deployment (CI/CD): Automation
+Containerization with Docker and Kubernetes: Containerization
+
+**Mobile Applications:**
+Mobile App Development with React Native: Cross-Platform
+iOS App Development with Swift: iOS
+Android App Development with Kotlin: Android
+
+**Cyber Security Associate:**
+Introduction to Cybersecurity Principles: Security Basics
+Network Security and Encryption: Encryption
+Incident Response and Forensics: Forensics
+
+**Interior Design:**
+Fundamentals of Interior Design: Design Principles
+Color Theory and Application in Interior Design: Color Schemes
+Space Planning and Furniture Design: Spatial Design
+
+**Softskills**
+Leadership and Team Collaboration, Time Management and Productivity, Critical Thinking and Problem-Solving
 -----------------------------------------------------------------------------------------------
 1:100     PowerBI
 101:250   Interior Design
