@@ -83,6 +83,13 @@ Leadership and Team Collaboration, Time Management and Productivity, Critical Th
 673:800   Mobile Applications
 801:1000  Web Development
 -----------------------------------------------------------------------------------------------
+Instructor whos teaches Courses
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
 Tables
 StrudentID ---> 1:1000
 InstructorID ----> 1:200
