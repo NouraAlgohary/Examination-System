@@ -11,3 +11,4 @@ Date: DATETIME
 Duration: INT
 Phone: NCHAR(11)
 Age: INT CHECK (Age BETWEEN 20 AND 35)
+Cost: Money
