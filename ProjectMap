@@ -1,0 +1,34 @@
+***  ProjectMap  ***
+_________________________
+1-  Understand The System
+
+2-  Make Conceptual Model
+
+3-  Make ERD
+
+4-  Mapping
+
+5-  SqlServer DataBase
+
+6-  Make Dummy Data and Load it
+
+7- Required Stored Procedures  
+      o	Select ,Insert update and delete (in any table)
+      o	Exam generation
+      o	Exam Answers 
+      o	Exam Correction
+
+***  DWH  (Optional) ***
+_________________________
+1-  Make Dimensional Model
+2-  DWH on SqlServer
+3-  ETL With SSIS
+
+
+***  PowerBI && SSRS ***
+________________________
+Required Reports
+
+*** Application (Optional) ***
+______________________________
+
