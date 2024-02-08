@@ -72,7 +72,7 @@ Lighting and Decor in Interior Design
 
 -Soft Sku=ills:
 Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV,Time Management
------------------------------------------------Topic------------------------------------------------------
+-----------------------------------------------Course / Topic------------------------------------------------------
 (course id) course name - topic name
 
 Web Development:
@@ -91,42 +91,45 @@ Power BI:
 
 Full Stack Development:
 (7) Introduction to Full Stack Development - Overview
-() Database Design and Management - Database
+(8) Database Design and Management - Database
 (9) Server-Side Scripting with Node.js - Scripting
 (25) Front-End Frameworks - Frontend
-Deployment and DevOps for Full Stack Applications - DevOps
+(26) Deployment and DevOps for Full Stack Applications - DevOps
 
 DevOps:
 (10) Introduction to DevOps Principles - Overview
-Version Control with Git - VersionControl
-Continuous Integration and Continuous Deployment - CI/CD
-Infrastructure as Code (IaC) - IaC
-Monitoring and Logging in DevOps - Monitoring
+(11) Version Control with Git - VersionControl
+(12) Continuous Integration and Continuous Deployment - CI/CD
+(27) Infrastructure as Code (IaC) - IaC
+(35) Monitoring and Logging in DevOps - Monitoring
 
 Mobile Applications:
 (13) Introduction to Mobile App Development - Overview
-Android App Development with Kotlin - Android
-iOS App Development with Swift - iOS
-Cross-Platform Mobile Development - CrossPlatform
-Mobile App Testing and Deployment - Testing
+(14) Android App Development with Kotlin - Android
+(15) iOS App Development with Swift - iOS
+(33) Cross-Platform Mobile Development - CrossPlatform
+(34) Mobile App Testing and Deployment - Testing
 
 Cyber Security Associate:
 (16) Introduction to Cybersecurity - Overview
-Network Security Fundamentals - NetworkSecurity
-Ethical Hacking and Penetration Testing - EthicalHacking
-Security Policies and Risk Management - RiskManagement
-Incident Response and Forensics in Cybersecurity - IncidentResponse
+(17) Network Security Fundamentals - Network Security
+(18) Ethical Hacking and Penetration Testing - Ethical Hacking
+(29) Security Policies and Risk Management - Risk Management
+(30) Incident Response and Forensics in Cybersecurity - Incident Response
 
 Interior Design:
 (19) Fundamentals of Interior Design - Overview
-Space Planning and Layout Design - SpacePlanning
-Color Theory and Material Selection - ColorTheory
-Furniture and Fixture Design - FurnitureDesign
-Lighting and Decor in Interior Design - LightingDecor
+(20) Space Planning and Layout Design - SpacePlanning
+(21) Color Theory and Material Selection - ColorTheory
+(31) Furniture and Fixture Design - Furniture Design
+(32) Lighting and Decor in Interior Design - Lighting Decor
 
 **Softskills**
-Critical Thinking and Problem-Solving, Presentation Skills, Time Management, Interview and CV
------------------------------------------------------------------------------------------------
+(22) Critical Thinking and Problem-Solving
+(23) Presentation Skills
+(37) Time Management
+(24) Interview and CV
+------------------------------------StudentID-----------------------------------------------------------
 1:100     PowerBI
 101:250   Interior Design
 251:300   Cyber Security Associate
@@ -142,7 +145,7 @@ Responsive Web Design (WebTrack)
 1,Front-End Frameworks (e.g., React or Angular) (Full) (هنا اكتر من inst  بيشرح لاكتر من تراك ويب و full) (كورسات مشتركه بين تاركين وكمان كورسات السوفت اسكيلز ) 
 
 2,Power BI Basics and Visualization,
-Data Modeling and DAX Functions , Power BI Service and Collaboration (powerBI)
+Data Modeling and DAX Functions, Power BI Service and Collaboration (powerBI)
 3,Power Query for Data Transformation(PowerBI)
 
 4,Introduction to Full Stack Development(Full)
@@ -186,9 +189,9 @@ Data Modeling and DAX Functions , Power BI Service and Collaboration (powerBI)
 -------------------------------------------------------------------------------------------------
 Tables
 StrudentID ---> 1:1000
-InstructorID ----> 1:200
+InstructorID ----> 1:25
 TrackID ----> 1:7
-CourseID-----> 1:37 instructor who is teaches these courses 1:25
+CourseID-----> 1:38 instructor who is teaches these courses 1:25
 
 --------------------------------------------------------------------------------------------------
 Power BI:
