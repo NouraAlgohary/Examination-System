@@ -20,55 +20,58 @@ Smart Village, New Capital, Cairo University, Alexandria, Assiut, Aswan, Beni Su
 
 -------------------------------------------Courses-----------------------------------------------
 (24 ROW)
-**Web Development:**
+
+-Web Development:
+HTML and CSS Fundamentals,
+JavaScript for Web Developers,
 Responsive Web Design,
-JavaScript and Front-End Frameworks,
-Server-Side Development with Node.js and Express, 
-HTML5 and CSS3 Fundamentals,
-JavaScript for Web Developers
+Front-End Frameworks (e.g., React or Angular),
+Server-Side Development with Node.js
 
-**Power BI:**
-Introduction to Power BI and Data Visualization, 
-Power Query and Data Transformation,
-Advanced Power BI DAX,
-Advanced Data Modeling with Power BI,
-Power Query and Power BI Desktop Mastery
+-Power BI:
+Power BI Basics and Visualization,
+Data Modeling and DAX Functions,
+Power Query for Data Transformation,
+Advanced Power BI Features and Custom Visuals,
+Power BI Service and Collaboration
 
-**Full Stack Development:**
-Introduction to Full Stack Development: Frontend and Backend Basics,
-Database Design and Management for Full Stack Developers,
-Building RESTful APIs with Express and MongoDB,
-React.js and Node.js Integration for Full Stack Applications,
-Full Stack Deployment and Scaling Strategies
+-Full Stack Development:
+Introduction to Full Stack Development,
+Database Design and Management,
+Server-Side Scripting with Node.js,
+Front-End Frameworks (e.g., React or Angular),
+Deployment and DevOps for Full Stack Applications
 
-**DevOps:**
-Principles and Practices,
-Version Control with Git and GitHub,
-Continuous Integration with Jenkins,
-Containerization with Docker and Kubernetes,
-Infrastructure as Code (IaC) using Terraform and Ansible
+-DevOps:
+Introduction to DevOps Principles,
+Version Control with Git,
+Continuous Integration and Continuous Deployment (CI/CD),
+Infrastructure as Code (IaC) with tools like Terraform,
+Monitoring and Logging in DevOps
 
-**Mobile Applications Track:**
+-Mobile Applications:
+Introduction to Mobile App Development,
+Android App Development with Kotlin,
+iOS App Development with Swift,
+Cross-Platform Mobile Development (e.g., Flutter or React Native),
+Mobile App Testing and Deployment
 
-Introduction to Mobile App Development: Choosing the Right Platform,
-iOS App Development with Swift and Xcode,
-Android App Development with Kotlin and Android Studio,
-Cross-Platform Mobile Development with Flutter,
-Mobile App Testing and Deployment Strategies
-
-**Cyber Security Associate Track:**
-Threats and Countermeasures
-Network Security and Firewalls,
+-Cyber Security Associate:
+Introduction to Cybersecurity,
+Network Security Fundamentals,
 Ethical Hacking and Penetration Testing,
-Incident Response and Digital Forensics,
-Security Policies and Compliance
+Security Policies and Risk Management,
+Incident Response and Forensics in Cybersecurity
 
-**Interior Design Track:**
-Principles and Elements
-Color Theory and Application in Interior Design,
-Furniture and Space Planning,
-Lighting Design for Interiors,
-Sustainable Design and Green Building Practices in Interior Design
+-Interior Design:
+Fundamentals of Interior Design,
+Space Planning and Layout Design,
+Color Theory and Material Selection,
+Furniture and Fixture Design,
+Lighting and Decor in Interior Design
+
+-Soft Sku=ills:
+Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV
 -----------------------------------------------Topic------------------------------------------------------
 **Web Development Track:**
 HTML5 and CSS3 Fundamentals: Structure
@@ -131,11 +134,52 @@ Leadership and Team Collaboration, Time Management and Productivity, Critical Th
 801:1000  Web Development
 -----------------------------------------------------------------------------------------------
 Instructor whos teaches Courses
+1,HTML and CSS Fundamentals,
+JavaScript for Web Developers,
+Responsive Web Design (WebTrack)
+1,Front-End Frameworks (e.g., React or Angular) (Full) (هنا اكتر من inst  بيشرح لاكتر من تراك ويب و full) (كورسات مشتركه بين تاركين وكمان كورسات السوفت اسكيلز ) 
 
+2,Power BI Basics and Visualization,
+Data Modeling and DAX Functions , Power BI Service and Collaboration (powerBI)
+3,Power Query for Data Transformation(PowerBI)
 
+4,Introduction to Full Stack Development(Full)
+5,Database Design and Management(full)
+6,Server-Side Scripting with Node.js(full)
 
+7,Introduction to DevOps Principles(DevOps)
+8,Version Control with Git(DevOps)
+9,Continuous Integration and Continuous Deployment (CI/CD) (DEVOPS)
 
+10,Introduction to Mobile App Development(MOB)
+11,Android App Development with Kotlin(MOB)
+12,iOS App Development with Swift(MOB)
 
+13,Introduction to Cybersecurity(Cyber)
+14,Network Security Fundamentals(Cyber)
+15,Ethical Hacking and Penetration Testing(Cyber)
+
+16,Fundamentals of Interior Design(Design)
+17,Space Planning and Layout Design (Design)
+18,Color Theory and Material Selection (Design)
+
+19,Critical Thinking and Problem-Solving (SOFT)
+  ,Presentation Skills (SOFT)
+20,Interview and CV (SOFT)
+
+7,Deployment and DevOps for Full Stack Applications(full)
+
+21,Infrastructure as Code (IaC) with tools like Terraform(Devops)
+
+22,Security Policies and Risk Management(Cyper)
+23,Incident Response and Forensics in Cybersecurity(Cyper)
+
+24,Furniture and Fixture Design, Lighting and Decor in Interior (Design)
+
+4,Cross-Platform Mobile Development ,Mobile App Testing and Deployment (MOb)
+
+12,Monitoring and Logging in DevOps (DevOps)
+1,Server-Side Development with Node.js (WEB)
 -------------------------------------------------------------------------------------------------
 Tables
 StrudentID ---> 1:1000
