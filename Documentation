@@ -73,9 +73,9 @@ Lighting and Decor in Interior Design
 -Soft Sku=ills:
 Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV,Time Management
 -----------------------------------------------Topic------------------------------------------------------
-
+(course id) course name - topic name
 Web Development:
-HTML and CSS Fundamentals - Overview
+(1) HTML and CSS Fundamentals - Overview
 JavaScript for Web Developers - Scripting
 Responsive Web Design - Frontend
 Front-End Frameworks -Frontend
@@ -89,42 +89,42 @@ Advanced Power BI Features and Custom Visuals - Advanced
 Power BI Service and Collaboration - Collaboration
 
 Full Stack Development:
-Introduction to Full Stack Development - Overview
+(7) Introduction to Full Stack Development - Overview
 Database Design and Management - Database
 Server-Side Scripting with Node.js - Scripting
 Front-End Frameworks - Frontend
 Deployment and DevOps for Full Stack Applications - DevOps
 
 DevOps:
-Introduction to DevOps Principles - Overview
+(10) Introduction to DevOps Principles - Overview
 Version Control with Git - VersionControl
 Continuous Integration and Continuous Deployment - CI/CD
 Infrastructure as Code (IaC) - IaC
 Monitoring and Logging in DevOps - Monitoring
 
 Mobile Applications:
-Introduction to Mobile App Development - Overview
+(13) Introduction to Mobile App Development - Overview
 Android App Development with Kotlin - Android
 iOS App Development with Swift - iOS
 Cross-Platform Mobile Development - CrossPlatform
 Mobile App Testing and Deployment - Testing
 
 Cyber Security Associate:
-Introduction to Cybersecurity - Overview
+(16) Introduction to Cybersecurity - Overview
 Network Security Fundamentals - NetworkSecurity
 Ethical Hacking and Penetration Testing - EthicalHacking
 Security Policies and Risk Management - RiskManagement
 Incident Response and Forensics in Cybersecurity - IncidentResponse
 
 Interior Design:
-Fundamentals of Interior Design - Overview
+(19) Fundamentals of Interior Design - Overview
 Space Planning and Layout Design - SpacePlanning
 Color Theory and Material Selection - ColorTheory
 Furniture and Fixture Design - FurnitureDesign
 Lighting and Decor in Interior Design - LightingDecor
 
 **Softskills**
-Critical Thinking and Problem-Solving, Presentation Skills,, Time Management, Interview and CV
+Critical Thinking and Problem-Solving, Presentation Skills, Time Management, Interview and CV
 -----------------------------------------------------------------------------------------------
 1:100     PowerBI
 101:250   Interior Design
