@@ -74,25 +74,26 @@ Lighting and Decor in Interior Design
 Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV,Time Management
 -----------------------------------------------Topic------------------------------------------------------
 (course id) course name - topic name
+
 Web Development:
 (1) HTML and CSS Fundamentals - Overview
-JavaScript for Web Developers - Scripting
-Responsive Web Design - Frontend
-Front-End Frameworks -Frontend
-Server-Side Development with Node.js - Backend
-Power BI:
+(2) JavaScript for Web Developers - Scripting
+(3) Responsive Web Design - Frontend
+(25) Front-End Frameworks -Frontend
+(36) Server-Side Development with Node.js - Backend
 
-Power BI Basics and Visualization - Visualizing
-Data Modeling and DAX Functions - Modeling
-Power Query for Data Transformation - Transforming
-Advanced Power BI Features and Custom Visuals - Advanced
+Power BI:
+(4) Power BI Basics and Visualization - Visualizing
+(5) Data Modeling and DAX Functions - Modeling
+(6) Power Query for Data Transformation - Transformation
+(28) Advanced Power BI Features and Custom Visuals - Advanced
 Power BI Service and Collaboration - Collaboration
 
 Full Stack Development:
 (7) Introduction to Full Stack Development - Overview
 Database Design and Management - Database
-Server-Side Scripting with Node.js - Scripting
-Front-End Frameworks - Frontend
+(9) Server-Side Scripting with Node.js - Scripting
+(25) Front-End Frameworks - Frontend
 Deployment and DevOps for Full Stack Applications - DevOps
 
 DevOps:
