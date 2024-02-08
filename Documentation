@@ -71,59 +71,60 @@ Furniture and Fixture Design,
 Lighting and Decor in Interior Design
 
 -Soft Sku=ills:
-Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV
+Critical Thinking and Problem-Solving, Presentation Skills, Interview and CV,Time Management
 -----------------------------------------------Topic------------------------------------------------------
-**Web Development Track:**
-HTML5 and CSS3 Fundamentals: Structure
-JavaScript for Web Developers: Interactivity
-React.js: User-Interfaces
-Node.js and Express: Backend
-Advanced Web Development with Angular: Framework
 
-**Power BI Track:**
-Power BI Basics: Visualization
-Advanced Data Modeling with Power BI: Modeling
-Power Query and Power BI Desktop Mastery: Transformation
-Power BI Service: Collaboration
-DAX Programming for Power BI: Formulas
+Web Development:
+HTML and CSS Fundamentals - Overview
+JavaScript for Web Developers - Scripting
+Responsive Web Design - Frontend
+Front-End Frameworks -Frontend
+Server-Side Development with Node.js - Backend
+Power BI:
 
-**Full Stack Track:**
-Introduction to Full Stack Development: Overview
-Database Design and Management for Full Stack Developers: Databases
-Building RESTful APIs with Express and MongoDB: APIs
-React.js and Node.js Integration for Full Stack Applications: Integration
-Full Stack Deployment and Scaling Strategies: Deployment
+Power BI Basics and Visualization - Visualizing
+Data Modeling and DAX Functions - Modeling
+Power Query for Data Transformation - Transforming
+Advanced Power BI Features and Custom Visuals - Advanced
+Power BI Service and Collaboration - Collaboration
 
-**DevOps Track:**
-Introduction to DevOps: Principles
-Version Control with Git and GitHub: VersionControl
-Continuous Integration with Jenkins: CI/CD
-Containerization with Docker and Kubernetes: Containers
-Infrastructure as Code (IaC) using Terraform and Ansible: IaC
+Full Stack Development:
+Introduction to Full Stack Development - Overview
+Database Design and Management - Database
+Server-Side Scripting with Node.js - Scripting
+Front-End Frameworks - Frontend
+Deployment and DevOps for Full Stack Applications - DevOps
 
-**Mobile Applications Track:**
-Introduction to Mobile App Development: Overview
-iOS App Development with Swift and Xcode: iOS
-Android App Development with Kotlin and Android Studio: Android
-Cross-Platform Mobile Development with Flutter: CrossPlatform
-Mobile App Testing and Deployment Strategies: Testing
+DevOps:
+Introduction to DevOps Principles - Overview
+Version Control with Git - VersionControl
+Continuous Integration and Continuous Deployment - CI/CD
+Infrastructure as Code (IaC) - IaC
+Monitoring and Logging in DevOps - Monitoring
 
-**Cyber Security Associate Track:**
-Cybersecurity Fundamentals: Security
-Network Security and Firewalls: Networking
-Ethical Hacking and Penetration Testing: EthicalHacking
-Incident Response and Digital Forensics: IncidentResponse
-Security Policies and Compliance: Compliance
+Mobile Applications:
+Introduction to Mobile App Development - Overview
+Android App Development with Kotlin - Android
+iOS App Development with Swift - iOS
+Cross-Platform Mobile Development - CrossPlatform
+Mobile App Testing and Deployment - Testing
 
-**Interior Design Track:**
-Introduction to Interior Design: Basics
-Color Theory and Application in Interior Design: Color
-Furniture and Space Planning: Furniture
-Lighting Design for Interiors: Lighting
-Sustainable Design and Green Building Practices in Interior Design: Sustainability
+Cyber Security Associate:
+Introduction to Cybersecurity - Overview
+Network Security Fundamentals - NetworkSecurity
+Ethical Hacking and Penetration Testing - EthicalHacking
+Security Policies and Risk Management - RiskManagement
+Incident Response and Forensics in Cybersecurity - IncidentResponse
+
+Interior Design:
+Fundamentals of Interior Design - Overview
+Space Planning and Layout Design - SpacePlanning
+Color Theory and Material Selection - ColorTheory
+Furniture and Fixture Design - FurnitureDesign
+Lighting and Decor in Interior Design - LightingDecor
 
 **Softskills**
-Leadership and Team Collaboration, Time Management and Productivity, Critical Thinking and Problem-Solving
+Critical Thinking and Problem-Solving, Presentation Skills,, Time Management, Interview and CV
 -----------------------------------------------------------------------------------------------
 1:100     PowerBI
 101:250   Interior Design
@@ -180,11 +181,14 @@ Data Modeling and DAX Functions , Power BI Service and Collaboration (powerBI)
 
 12,Monitoring and Logging in DevOps (DevOps)
 1,Server-Side Development with Node.js (WEB)
+25,Time Management (Soft)
 -------------------------------------------------------------------------------------------------
 Tables
 StrudentID ---> 1:1000
 InstructorID ----> 1:200
 TrackID ----> 1:7
+CourseID-----> 1:37 instructor who is teaches these courses 1:25
+
 --------------------------------------------------------------------------------------------------
 Power BI:
 Design and implement Power BI dashboards for comprehensive business analytics.
