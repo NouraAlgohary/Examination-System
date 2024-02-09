@@ -1,4 +1,4 @@
-StudentID,FirstName,LastName,Age,Gender,Faculty,GraduationYear,Phone,Location,Email,Password
+StudentID,FirstName,LastName,Age,Gender,Faculty,GraduationYear,Phone ,Location,Email,Password
 1,Farah,Azmy,22,Female,Computer Science,2023,1016655037,Dakahlia,farahmazmy@gmail.com,mA8)D3@D_)Se
 2,Noura,Algohary,24,Female,Engineering,2023,1013344589,Dakahlia,Noura@gmail.com,qZ1}nYu+GZ=Yd
 3,Ahmed,Hamdy,28,Male,Engineering,2020,1114570087,Cairo,AhmedHamdy@gmail.com,wQ9)?tHKIYk9N
