@@ -63,7 +63,7 @@ AS
 	
 	END;
 Go
-	--------------------------------
+----------------------------------------
 --4 takes course ID and returns its topics  
 
 
@@ -82,7 +82,7 @@ AS
 
 
 
-	-----------------------
+----------------------------
 	-- 5-	Report that takes exam number and returns the Questions in it and chocies [freeform report]
 
 
@@ -99,6 +99,16 @@ AS
 
 
 
-	-------------------
-	--6 -
+----------------------------
+	--6 - 	Report that takes exam number and the student ID then returns the Questions in this exam with the student answers. 
+
+
+
+
+
+
+
+
+
+
 
