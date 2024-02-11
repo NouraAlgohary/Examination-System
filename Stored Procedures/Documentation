@@ -8,7 +8,10 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 5) (Student) GenerateExam -------------- StudentID, CourseID -------------- Exam [TakesExam]
 
 ********** Course **********
-6) Courses -------------- StudentID -------------- Courses              [DONE]
+6) XX Courses -------------- StudentID -------------- Courses              [DONE]
+7) (Admin) InsertCourse  -------------- CourseID -------------- 
+8) (Admin) UpdateCourse  -------------- CourseID -------------- 
+9) (Admin) DeleteCourse  -------------- CourseID -------------- 
 
 
 ********** TakesExam **********
