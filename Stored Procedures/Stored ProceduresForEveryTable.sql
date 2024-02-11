@@ -98,7 +98,7 @@ go
 ---------------------------------------------------
 -- DELETE A BRANCH with ID
 CREATE PROCEDURE DeleteBranch
-    @BranchID INT =NULL,
+    @BranchID INT ,
     @BranchLocation Varchar(50) =NULL,
     @BranchManager  Varchar(50) = NULL
 with encryption
