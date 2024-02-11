@@ -137,13 +137,13 @@ Interior Design:
 (37) Time Management
 (24) Interview and CV
 ------------------------------------StudentID-----------------------------------------------------------
-1:100     PowerBI
-101:250   Interior Design
-251:300   Cyber Security Associate
-301:600   Full stack
-601:672   DevOps
-673:800   Mobile Applications
-801:1000  Web Development
+1:100     PowerBI  ------>2
+101:250   Interior Design  ------>3
+251:300   Cyber Security  ------>6
+301:600   Full stack  ------>4
+601:672   DevOps ------>1
+673:800   Mobile Applications ------>5
+801:983  Web Development  ------>7
 -----------------------------------------------------------------------------------------------
 Instructor whos teaches Courses
 1,HTML and CSS Fundamentals,
