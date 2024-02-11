@@ -11,5 +11,5 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 6) Courses -------------- StudentID -------------- Courses              [DONE]
 
 
-********** Course **********
+********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
