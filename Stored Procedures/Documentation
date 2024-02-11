@@ -1,4 +1,11 @@
 ********** Student **********
-Login --------------         Email, Password          ---------------     Student, Track, Branch
+Stored Procedure Name --------------  Input Parameters --------------  Output
 
+1) (Student) Login --------------  Email, Password  --------------- StudentID
+2) (Admin) Insert -------------- Student, Track, Branch, Course -------------- 
+3) (Student) Update -------------- Email, Password --------------  
+4) (Admin) Delete, SELECT -------------- StudentName -------------- 
+5) (Student) GenerateExam -------------- StudentID, CourseID -------------- Exam
 
+********** Course **********
+6) Courses -------------- StudentID -------------- Courses
