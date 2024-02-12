@@ -4,7 +4,7 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 1) XX (Student) StudentLogin --------------  Email, Password  --------------- StudentID
 2) XX (Admin) InsertStudent -------------- Student, Track, Branch -------------- 
 3) XX (Student) UpdateStudent -------------- Email, Password --------------  
-4) (Admin) DeleteStudent, SELECT -------------- StudentName -------------- 
+4) XX (Admin) DeleteStudent, SELECT -------------- StudentName -------------- 
 5) (Student) GenerateExam -------------- StudentID, CourseID -------------- Exam [TakesExam]
 
 ********** Course **********
