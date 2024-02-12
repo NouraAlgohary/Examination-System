@@ -9,9 +9,9 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 
 ********** Course **********
 6) XX Courses -------------- StudentID -------------- Courses              [DONE]
-7) (Admin) InsertCourse  -------------- CourseID -------------- 
-8) (Admin) UpdateCourse  -------------- CourseID -------------- 
-9) (Admin) DeleteCourse  -------------- CourseID -------------- 
+7) XX (Admin) InsertCourse  -------------- CourseID -------------- 
+8) XX (Admin) UpdateCourse  -------------- CourseID -------------- 
+9) XX (Admin) DeleteCourse  -------------- CourseID -------------- 
 
 
 ********** TakesExam **********
