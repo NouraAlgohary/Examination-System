@@ -15,9 +15,13 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 
 ********** Branch **********
 10) XX (Admin) InsertBranch  -------------- BranchLocation, BranchManager -------------- 
-11) (Admin) UpdateBranch  -------------- BranchLocation -------------- 
-12) (Admin) DeleteBranch  -------------- BranchLocation -------------- 
+11) XX (Admin) UpdateBranch  -------------- BranchLocation -------------- 
+12) XX (Admin) DeleteBranch  -------------- BranchLocation -------------- 
 
+********** Topic **********
+10) (Admin) InsertTopic -------------- TopicName -------------- 
+11) XX (Admin) UpdateTopic  -------------- TopicName -------------- 
+12) XX (Admin) DeleteTopic  -------------- TopicName -------------- 
 
 ********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
