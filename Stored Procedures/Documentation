@@ -1,7 +1,6 @@
 Stored Procedure Name --------------  Input Parameters --------------  Output
 
 ********** Student **********
-
 1) XX (Student) StudentLogin --------------  Email, Password  --------------- StudentID
 2) XX (Admin) InsertStudent -------------- Student, Track, Branch -------------- 
 3) XX (Student) UpdateStudent -------------- Email, Password --------------  
