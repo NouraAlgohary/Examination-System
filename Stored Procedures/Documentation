@@ -14,9 +14,9 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 9) XX (Admin) DeleteCourse  -------------- CourseID -------------- 
 
 ********** Branch **********
-10) XX (Admin) InsertBranch  -------------- CourseID -------------- 
-11) (Admin) UpdateBranch  -------------- CourseID -------------- 
-12) (Admin) DeleteBranch  -------------- CourseID -------------- 
+10) XX (Admin) InsertBranch  -------------- BranchLocation, BranchManager -------------- 
+11) (Admin) UpdateBranch  -------------- BranchLocation -------------- 
+12) (Admin) DeleteBranch  -------------- BranchLocation -------------- 
 
 
 ********** TakesExam **********
