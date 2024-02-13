@@ -2,6 +2,9 @@ Entity: 11
 Relationships: 13
 Weak Entity: 3
 ------------------------------------------------
+Database
+Tables: 19
+------------------------------------------------
 FirstName: VCHAR(20)
 LastName: VCHAR(20)
 String: VCHAR(50), VCHAR((255)
