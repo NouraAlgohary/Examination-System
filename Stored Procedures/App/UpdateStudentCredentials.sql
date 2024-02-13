@@ -1,5 +1,5 @@
 --update student email and password 
-ALTER PROCEDURE UpdateStudentCredentials
+Create PROCEDURE UpdateStudentCredentials
     @StudentID INT,
     @NewEmail VARCHAR(255),
     @NewPassword VARCHAR(50) 
