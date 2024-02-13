@@ -85,7 +85,13 @@ AS
 	-- 5-	Report that takes exam number and returns the Questions in it and chocies [freeform report]
 
 
-
+Create proc EXAM_CHOICES @EXAMID INT
+ AS
+  BEGIN 
+		SELECT E.ExamID,Q.QuestionTitle,C.Choices FROM TakesExam E JOIN Questions Q 
+		ON E.QuestionID= Q.QuestionID JOIN Choices C ON C.QuestionID=Q.QuestionID
+		WHERE E.EXAMID=@EXAMID
+  END;
 
 
 
