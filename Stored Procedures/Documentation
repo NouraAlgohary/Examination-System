@@ -29,5 +29,18 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 16) XX (Admin) UpdateInstructor  --------------BY ID , and update any specified field -------------- 
 17) XX (Admin) DeleteInstructor  -------------- delete with name -------------- 
 
+********** JOBKPI **********
+18) XX (Admin) SelectJOBKPI
+19) XX (Admin) InsertJobKPI -------------- ALL DATA  -------------- 
+20) XX (Admin) UpdateJobKPI  --------------BY ID of Student, and update any specified field -------------- 
+21) XX (Admin) DeleteJobKPI  -------------- delete with student id -------------- 
+
+********** FreelancingKPI **********
+22) XX (Admin) SelectFreelancingKPI
+23) XX (Admin) InsertFreelancingKPI -------------- ALL DATA Except JobDescription Optional -------------- 
+24) XX (Admin) UpdateFreelancingKPI  --------------BY ID of Student, and update any specified field -------------- 
+25) XX (Admin) DeleteFreelancingKPI  -------------- delete with student id -------------- 
+
+
 ********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
