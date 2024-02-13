@@ -19,7 +19,7 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 12) XX (Admin) DeleteBranch  -------------- BranchLocation -------------- 
 
 ********** Topic **********
-11) (Admin) InsertTopic -------------- TopicName -------------- 
+11) XX(Admin) InsertTopic -------------- TopicName -------------- 
 13) XX (Admin) UpdateTopic  -------------- TopicName -------------- 
 13) XX (Admin) DeleteTopic  -------------- TopicName -------------- 
 
