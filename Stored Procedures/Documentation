@@ -19,9 +19,15 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 12) XX (Admin) DeleteBranch  -------------- BranchLocation -------------- 
 
 ********** Topic **********
-10) (Admin) InsertTopic -------------- TopicName -------------- 
-11) XX (Admin) UpdateTopic  -------------- TopicName -------------- 
-12) XX (Admin) DeleteTopic  -------------- TopicName -------------- 
+11) (Admin) InsertTopic -------------- TopicName -------------- 
+13) XX (Admin) UpdateTopic  -------------- TopicName -------------- 
+13) XX (Admin) DeleteTopic  -------------- TopicName -------------- 
+
+********** Instructor **********
+14) XX (Admin) SelectInstructor
+15) XX (Admin) InsertInstructor -------------- FirstName,LastName , Others are optional -------------- 
+16) XX (Admin) UpdateInstructor  --------------BY ID , and update any specified field -------------- 
+17) XX (Admin) DeleteInstructor  -------------- delete with name -------------- 
 
 ********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
