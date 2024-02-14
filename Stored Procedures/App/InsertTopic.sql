@@ -1,4 +1,4 @@
-ALTER PROCEDURE InsertTopic 
+CREATE PROCEDURE InsertTopic 
     @topicid INT,  -- assuming @topicid is provided
     @topicname VARCHAR(50)
 AS
@@ -13,5 +13,3 @@ BEGIN
     -- Disable identity insert after the operation
     SET IDENTITY_INSERT Topic OFF;
 END;
-
-EXEC InsertTopic @topicname = 'NewTopic';

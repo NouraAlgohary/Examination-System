@@ -8,5 +8,3 @@ AS
 BEGIN 
 SELECT * FROM FreelancingKPI
 END
-
-GO

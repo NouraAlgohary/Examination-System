@@ -4,7 +4,6 @@
 CREATE PROCEDURE InsertFreelancingKPI
     @StudentID int,
     @TrackName varchar(50),
-    @JobDescription varchar(255) =NULL,
     @Tool varchar(50),
     @Platform varchar(50),
     @Duration int,
@@ -21,8 +20,8 @@ BEGIN
     END
 
     -- Insert into FreelancingKPI table
-    INSERT INTO FreelancingKPI (StudentID, TrackName, JobDescription, Tool, Platform, Duration, Cost)
-    VALUES (@StudentID, @TrackName, @JobDescription, @Tool, @Platform, @Duration, @Cost);
+    INSERT INTO FreelancingKPI (StudentID, TrackName, Tool, Platform, Duration, Cost)
+    VALUES (@StudentID, @TrackName, @Tool, @Platform, @Duration, @Cost);
 
     PRINT 'FreelancingKPI record inserted successfully.';
 END

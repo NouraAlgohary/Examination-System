@@ -2,7 +2,6 @@
 CREATE PROCEDURE UpdateFreelancingKPI
     @StudentID int,
     @TrackName varchar(50) = NULL,
-    @JobDescription varchar(255) = NULL,
     @Tool varchar(50) = NULL,
     @Platform varchar(50) = NULL,
     @Duration int = NULL,
@@ -22,7 +21,6 @@ BEGIN
     UPDATE FreelancingKPI
     SET 
         TrackName = ISNULL(@TrackName, TrackName),
-        JobDescription = ISNULL(@JobDescription, JobDescription),
         Tool = ISNULL(@Tool, Tool),
         Platform = ISNULL(@Platform, Platform),
         Duration = ISNULL(@Duration, Duration),
