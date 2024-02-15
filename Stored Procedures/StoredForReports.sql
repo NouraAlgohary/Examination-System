@@ -109,10 +109,11 @@ Create proc EXAM_CHOICES @EXAMID INT
 
 
 
-CREATE PROC STUDENT_ANSWER @STUDENTID INT, @EXAMID INT
+AlTER PROC STUDENT_ANSWER @STUDENTID INT, @EXAMID INT
  AS 
 	BEGIN 
-		 SELECT StudentID,ExamID, StudentAnswer FROM TakesExam
+		 SELECT StudentID,ExamID,QuestionTitle, StudentAnswer FROM TakesExam
+		 join Questions ON TakesExam.QuestionID=Questions.QuestionID
 		 WHERE StudentID=@STUDENTID AND EXAMID=@EXAMID
 	END;
 
