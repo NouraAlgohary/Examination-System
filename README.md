@@ -17,4 +17,5 @@ ITI Graduation Project</br>
 ### Course 
 - Overview
 ### Track (7 Dashboard)
-SUM = 16
+### Grades
+SUM = 17
