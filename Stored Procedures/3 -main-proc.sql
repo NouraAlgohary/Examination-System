@@ -44,7 +44,7 @@ EXEC CreateExamv02 @CourseID=8,@StudentID=360;
 EXEC CreateExamv02 @CourseID=2,@StudentID=905;
 EXEC CreateExamv02 @CourseID=2,@StudentID=906;
 --------------------------------------------------------------------------1-proc (another one)------------------------------------------------------
-Create PROCEDURE CreateExamv03 @CourseID INT, @StudentID INT
+Alter PROCEDURE CreateExamv03 @CourseID INT, @StudentID INT
 AS
 BEGIN
     INSERT INTO Exam (TotalScore) VALUES (0);
@@ -53,9 +53,9 @@ BEGIN
 
     CREATE TABLE #TempExam (StudentID INT, ExamID INT, QuestionID INT);
 
-    -- Select 3 True/False Questions
+    -- Select 4 True/False Questions
 		  INSERT INTO #TempExam (StudentID, ExamID, QuestionID)
-		  SELECT TOP 3
+		  SELECT TOP 4
 		    @StudentID,
 			@ExamID,
 			Q.QuestionID
@@ -67,7 +67,8 @@ BEGIN
 			ORDER BY
 			NEWID();
 		INSERT INTO #TempExam (StudentID, ExamID, QuestionID)
-		SELECT TOP 7
+		-- Select 6 MCQ Questions
+		SELECT TOP 6
 			@StudentID,
 			@ExamID,
 			Q.QuestionID
