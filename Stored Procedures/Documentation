@@ -29,6 +29,12 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 16) XX (Admin) UpdateInstructor  --------------BY ID , and update any specified field -------------- 
 17) XX (Admin) DeleteInstructor  -------------- delete with name -------------- 
 
+********** Track **********
+14) (Admin) SelectTrack
+15) (Admin) InsertTrack -------------- Name -------------- 
+16) (Admin) UpdateTrack  -------------- ID -------------- 
+17) (Admin) DeleteTrack  -------------- ID -------------- 
+
 ********** JOBKPI **********
 18) XX (Admin) SelectJOBKPI
 19) XX (Admin) InsertJobKPI -------------- ALL DATA  -------------- 
