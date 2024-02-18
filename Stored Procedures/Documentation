@@ -50,3 +50,8 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 
 ********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
+
+
+****************************** Needed ******************************
+- InstructorInformation -------------- InstructorID -------------- Information, Courses
+
