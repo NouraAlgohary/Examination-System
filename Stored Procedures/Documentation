@@ -8,7 +8,7 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 5) (Student) GenerateExam -------------- StudentID, CourseID -------------- Exam [TakesExam]
 
 ********** Course **********
-6) XX Courses -------------- StudentID -------------- Courses              [DONE]
+6) XX Courses -------------- StudentID -------------- Courses          
 7) XX (Admin) InsertCourse  -------------- CourseID -------------- 
 8) XX (Admin) UpdateCourse  -------------- CourseID -------------- 
 9) XX (Admin) DeleteCourse  -------------- CourseID -------------- 
@@ -57,6 +57,21 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 29) XX (Admin) InserNewtTrack         -----------  Takes TrackName,InstructorID,HiringDate, BranchID  -------------- 
 30) XX (Admin) UpdateTrack  --------------Takes  TrackID ,InstructorID (Optional),TrackName (Optional),HiringDate (Optional) -------------- 
 31) XX (Admin) DeleteTrack -------- Takes TrackID
+
+
+********** Question **********
+ 
+32) XX (Admin) InserQuestion (Will Also add Chocies if needed)(Read Description In the file)  --- Takes---@CourseID int,@QuestionType, @QuestionTitle ,@CorrectAnswer,@Choice1(Optional),@Choice2(Optional)
+33) XX (Admin) UpdateQuestion  (Update with the given Parameter) ---Takes--- QuestionID,QuestionTitle(Optional),CorrectAnswer(Optional),QuestionType(Optional)
+34) XX (Admin) DeleteQuestion  AND its chocies will also be deleted-------- Takes Question ID
+
+********** Choices ***********
+35) XX (Admin) UpdateChoicesForQuestion (Will Delete The old Choices for the question then inserts the given choices)--Takes--  @QuestionID INT,Choice1,Choice2,Choice3
+
+
+********* Additional Procedures *****
+36) XX AssignCourseToTrack         Inserts the Course into a Specified Track Using course name and track name IN TABLE (TrackCourse)
+37) XX AssignInstructorToTrack    	AssignInstructorToTrack Using InstructorName and track name  IN TABLE (TrackInstructor)
 
 
 
