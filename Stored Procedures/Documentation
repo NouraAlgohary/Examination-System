@@ -47,6 +47,18 @@ Stored Procedure Name --------------  Input Parameters --------------  Output
 24) XX (Admin) UpdateFreelancingKPI  --------------BY ID of Student, and update any specified field -------------- 
 25) XX (Admin) DeleteFreelancingKPI  -------------- delete with student id -------------- 
 
+********** CertificationKPI **********
+26) XX (Admin) SelectCertificationKPIByStudent --------- Takes Student ID --------- shows His Full Name , CertificationName , Platform 
+27) XX (Admin) InsertCertificationKPI --------------Takes  StudentID ,CertificationName ,Duration(Optional),Platform -------------- 
+28) XX (Admin) DeleteCertificationKPI  -------------- delete with student id -------------- 
+
+********** Track **********
+ 
+29) XX (Admin) InserNewtTrack         -----------  Takes TrackName,InstructorID,HiringDate, BranchID  -------------- 
+30) XX (Admin) UpdateTrack  --------------Takes  TrackID ,InstructorID (Optional),TrackName (Optional),HiringDate (Optional) -------------- 
+31) XX (Admin) DeleteTrack -------- Takes TrackID
+
+
 
 ********** TakesExam **********
 InsertAnswers -------------- StudentAnswer, QuestionID  --------------  Score
