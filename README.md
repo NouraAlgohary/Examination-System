@@ -2,11 +2,11 @@
 ITI Graduation Project</br>
 
 ## Dashboards
-### Instructor 
+### (Farah) Instructor 
 - Overview
 - Drill through
 - Details
-### Student 
+### (Farah) Student 
 - Overview
 - Student KPIs
 - Drill through + details
