@@ -1,0 +1,1713 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/20/2024 7:44:15 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ADMIN-PC"
+  DTS:CreatorName="ADMIN-PC\Admin"
+  DTS:DTSID="{5DACE212-E425-474B-AD7E-506EEB44E667}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{9184F0F7-3807-4D07-9B94-06379A87D816}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DF_Questions"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{73FD3693-3E85-44CB-AD9B-2726B411A8C0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF_Questions"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF_Questions\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output].Columns[source_system_code]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output].Columns[source_system_code]"
+                      name="source_system_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(dt_ui1)1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(dt_ui1)1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Output].Columns[end_date]"
+                      dataType="dbTimeStamp"
+                      description="end_date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Output].Columns[end_date]"
+                      name="end_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(@[System::ContainerStartTime])</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(@[System::ContainerStartTime])</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[start_date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[start_date]"
+                      name="start_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(@[System::ContainerStartTime])</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(@[System::ContainerStartTime])</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[is_current]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[is_current]"
+                      name="is_current"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(dt_ui1)1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(dt_ui1)1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DF_Questions\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\Insert Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Insert Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIM|Questions]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF_Questions\Insert Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{8932C376-7C0E-49F9-9CFC-BDC0293E4EA0}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.ExaminationSystemDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[QuestionID]"
+                      cachedDataType="i4"
+                      cachedName="QuestionID"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionID]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionID]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[QuestionTitle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="QuestionTitle"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTitle]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionTitle]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[QuestionType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="QuestionType"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionType]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionType]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[Choices]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Choices"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Choices]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[Choices]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[CorrectAnswer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="CorrectAnswer"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[CorrectAnswer]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CorrectAnswer]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[source_system_code]"
+                      cachedDataType="ui1"
+                      cachedName="source_system_code"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[source_system_code]"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[source_system_code]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[start_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="start_date"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[start_date]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].Columns[is_current]"
+                      cachedDataType="ui1"
+                      cachedName="is_current"
+                      externalMetadataColumnId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[is_current]"
+                      lineageId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output].Columns[is_current]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionSK]"
+                      dataType="i4"
+                      name="QuestionSK" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionID]"
+                      dataType="i4"
+                      name="QuestionID" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="QuestionTitle" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="QuestionType" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Choices]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Choices" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[CorrectAnswer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CorrectAnswer" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[source_system_code]"
+                      dataType="ui1"
+                      name="source_system_code" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[is_current]"
+                      dataType="ui1"
+                      name="is_current" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
+                      dataType="dbTimeStamp"
+                      name="start_date" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
+                      dataType="dbTimeStamp"
+                      name="end_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Insert Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[DIM|Questions] SET [end_date] = ?, is_current=0 WHERE [QuestionID] = ? AND [end_date] IS NULL</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF_Questions\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="{8932C376-7C0E-49F9-9CFC-BDC0293E4EA0}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.ExaminationSystemDWH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].Columns[QuestionID]"
+                      cachedDataType="i4"
+                      cachedName="QuestionID"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]" />
+                    <inputColumn
+                      refId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].Columns[end_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="end_date"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Output].Columns[end_date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="dbTimeStamp"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT q.*, c.Choices
+FROM Questions AS q
+JOIN Choices c
+ON q.QuestionID = c.QuestionID;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF_Questions\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{ECDD7765-8398-401C-90AC-76ADCAF45943}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.ExaminationSystemDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionID]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]"
+                      name="QuestionID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CourseID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CourseID]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CourseID]"
+                      name="CourseID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionType]"
+                      length="50"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]"
+                      name="QuestionType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionTitle]"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionTitle]"
+                      name="QuestionTitle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CorrectAnswer]"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]"
+                      name="CorrectAnswer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Choices]"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]"
+                      name="Choices"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionID]"
+                      dataType="i4"
+                      name="QuestionID" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CourseID]"
+                      dataType="i4"
+                      name="CourseID" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="QuestionType" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QuestionTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="QuestionTitle" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CorrectAnswer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CorrectAnswer" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Choices]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Choices" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionID]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionID]"
+                      name="QuestionID" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CourseID]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CourseID]"
+                      name="CourseID" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionType]"
+                      name="QuestionType" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QuestionTitle]"
+                      name="QuestionTitle" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CorrectAnswer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CorrectAnswer]"
+                      name="CorrectAnswer" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Choices]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Choices]"
+                      name="Choices" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\Slowly Changing Dimension"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [Choices], [CorrectAnswer], [QuestionID], [QuestionType],[start_date],[end_date] FROM [dbo].[DIM|Questions]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere">[start_date] IS NOT NULL AND [end_date] IS NULL</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Connections[LookupConnection]"
+                  connectionManagerID="{8932C376-7C0E-49F9-9CFC-BDC0293E4EA0}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.ExaminationSystemDWH]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Choices]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Choices"
+                      externalMetadataColumnId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Choices]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[CorrectAnswer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="CorrectAnswer"
+                      externalMetadataColumnId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[CorrectAnswer]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[QuestionID]"
+                      cachedDataType="i4"
+                      cachedName="QuestionID"
+                      externalMetadataColumnId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[QuestionID]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[QuestionType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="QuestionType"
+                      externalMetadataColumnId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[QuestionType]"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Choices]"
+                      codePage="1256"
+                      dataType="str"
+                      length="255"
+                      name="Choices" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[CorrectAnswer]"
+                      codePage="1256"
+                      dataType="str"
+                      length="255"
+                      name="CorrectAnswer" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[QuestionID]"
+                      dataType="i4"
+                      name="QuestionID" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[QuestionType]"
+                      codePage="1256"
+                      dataType="str"
+                      length="50"
+                      name="QuestionType" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[start_date]"
+                      dataType="dbTimeStamp"
+                      name="start_date" />
+                    <externalMetadataColumn
+                      refId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[end_date]"
+                      dataType="dbTimeStamp"
+                      name="end_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF_Questions\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\DF_Questions\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[QuestionID]"
+                      cachedDataType="i4"
+                      cachedName="QuestionID"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[CourseID]"
+                      cachedDataType="i4"
+                      cachedName="CourseID"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CourseID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CourseID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[QuestionType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="QuestionType"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionType]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[QuestionTitle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="QuestionTitle"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionTitle]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionTitle]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[CorrectAnswer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="CorrectAnswer"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CorrectAnswer]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[Choices]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Choices"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[Choices]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 1].Columns[source_system_code]"
+                      cachedDataType="ui1"
+                      cachedName="source_system_code"
+                      lineageId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output].Columns[source_system_code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[source_system_code]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\DF_Questions\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[QuestionID]"
+                      cachedDataType="i4"
+                      cachedName="QuestionID"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[CourseID]"
+                      cachedDataType="i4"
+                      cachedName="CourseID"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CourseID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CourseID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[QuestionType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="QuestionType"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionType]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[QuestionTitle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="QuestionTitle"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionTitle]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionTitle]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[CorrectAnswer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="CorrectAnswer"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CorrectAnswer]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[Choices]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Choices"
+                      lineageId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[Choices]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DF_Questions\Union All.Inputs[Union All Input 2].Columns[source_system_code]"
+                      cachedDataType="ui1"
+                      cachedName="source_system_code"
+                      lineageId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output].Columns[source_system_code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[source_system_code]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\DF_Questions\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF_Questions\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionID]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionID]"
+                      name="QuestionID" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CourseID]"
+                      dataType="i4"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CourseID]"
+                      name="CourseID" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionType]"
+                      name="QuestionType" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[QuestionTitle]"
+                      name="QuestionTitle" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CorrectAnswer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[CorrectAnswer]"
+                      name="CorrectAnswer" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[Choices]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[Choices]"
+                      name="Choices" />
+                    <outputColumn
+                      refId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[source_system_code]"
+                      dataType="ui1"
+                      lineageId="Package\DF_Questions\Union All.Outputs[Union All Output 1].Columns[source_system_code]"
+                      name="source_system_code" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF_Questions.Paths[Derived Column Output]"
+              endId="Package\DF_Questions\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+              name="Derived Column Output"
+              startId="Package\DF_Questions\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[Derived Column Output1]"
+              endId="Package\DF_Questions\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\DF_Questions\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[Derived Column Output2]"
+              endId="Package\DF_Questions\Insert Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\DF_Questions\Derived Column 2.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[Historical Attribute Inserts Output]"
+              endId="Package\DF_Questions\Derived Column 1.Inputs[Derived Column Input]"
+              name="Historical Attribute Inserts Output"
+              startId="Package\DF_Questions\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[New Output]"
+              endId="Package\DF_Questions\Union All.Inputs[Union All Input 1]"
+              name="New Output"
+              startId="Package\DF_Questions\Slowly Changing Dimension.Outputs[New Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[OLE DB Command Output]"
+              endId="Package\DF_Questions\Union All.Inputs[Union All Input 2]"
+              name="OLE DB Command Output"
+              startId="Package\DF_Questions\OLE DB Command.Outputs[OLE DB Command Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[OLE DB Source Output]"
+              endId="Package\DF_Questions\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF_Questions\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\DF_Questions.Paths[Union All Output 1]"
+              endId="Package\DF_Questions\Derived Column 2.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\DF_Questions\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\DF_Questions"
+          TopLeft="282.857143459271,25.2352940955273" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DF_Questions">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\DF_Questions\OLE DB Source"
+          TopLeft="43.2428569026139,47.5588234925455" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\DF_Questions\Derived Column"
+          TopLeft="230.928571591268,45.9235294653881" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[OLE DB Source Output]"
+          TopLeft="192.842856902614,67.5411764789668">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.0857146886538,0"
+              Start="0,0"
+              End="30.5857146886538,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="30.5857146886538,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\DF_Questions\Slowly Changing Dimension"
+          TopLeft="520.471429409239,43.5235295565481" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[Derived Column Output]"
+          TopLeft="383.728571591268,62.7235295109681">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.742857817971,0"
+              Start="0,0"
+              End="129.242857817971,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="129.242857817971,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DF_Questions\Derived Column 1"
+          TopLeft="401.271429409239,104.594117827368" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[Historical Attribute Inserts Output]"
+          TopLeft="520.471429409239,69.9235295565481">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-37.9999999999999,34.6705882708197"
+              Start="0,0"
+              End="-37.9999999999999,27.1705882708197">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-33.9999999999999,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-33.9999999999999,0"
+                    Point2="-37.9999999999999,0"
+                    Point3="-37.9999999999999,4" />
+                  <mssgle:LineSegment
+                    End="-37.9999999999999,27.1705882708197" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.05638671875,-17.609375,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\DF_Questions\OLE DB Command"
+          TopLeft="399.071429409239,206.194117827368" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[Derived Column Output1]"
+          TopLeft="481.971429409239,146.194117827368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\DF_Questions\Union All"
+          TopLeft="603.757143778582,203.794117918527" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[New Output]"
+          TopLeft="624.471429409239,85.1235295565481">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.2857143693433,118.670588361979"
+              Start="0,0"
+              End="39.2857143693433,111.170588361979">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.3352941809897" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.3352941809897"
+                    Point2="0,59.3352941809897"
+                    Point3="4,59.3352941809897" />
+                  <mssgle:LineSegment
+                    End="35.2857143693433,59.3352941809897" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.2857143693433,59.3352941809897"
+                    Point2="39.2857143693433,59.3352941809897"
+                    Point3="39.2857143693433,63.3352941809897" />
+                  <mssgle:LineSegment
+                    End="39.2857143693433,111.170588361979" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.44852953407836,64.3352941809897,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[OLE DB Command Output]"
+          TopLeft="563.871429409239,225.794117872948">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.8857143693433,0"
+              Start="0,0"
+              End="32.3857143693433,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.3857143693433,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DF_Questions\Derived Column 2"
+          TopLeft="571.842858041489,298.511764983384" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[Union All Output 1]"
+          TopLeft="663.757143778582,245.394117918527">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.7142857370934,53.1176470648563"
+              Start="0,0"
+              End="-10.7142857370934,45.6176470648563">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5588235324281" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5588235324281"
+                    Point2="0,26.5588235324281"
+                    Point3="-4,26.5588235324281" />
+                  <mssgle:LineSegment
+                    End="-6.71428573709341,26.5588235324281" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.71428573709341,26.5588235324281"
+                    Point2="-10.7142857370934,26.5588235324281"
+                    Point3="-10.7142857370934,30.5588235324281" />
+                  <mssgle:LineSegment
+                    End="-10.7142857370934,45.6176470648563" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DF_Questions\Insert Destination"
+          TopLeft="383.271429068641,298.476470956227" />
+        <EdgeLayout
+          Id="Package\DF_Questions.Paths[Derived Column Output2]"
+          TopLeft="571.842858041489,319.294117969805">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-26.1714289728477,0"
+              Start="0,0"
+              End="-18.6714289728477,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.6714289728477,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF_Questions\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF_Questions\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{8932C376-7C0E-49F9-9CFC-BDC0293E4EA0}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[DIM|Questions]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;OLE DB Source.Outputs[OLE DB Source Output].Columns[Choices]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Choices&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;OLE DB Source.Outputs[OLE DB Source Output].Columns[CorrectAnswer]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;CorrectAnswer&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionID]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;QuestionID&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionTitle]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;QuestionTitle&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;OLE DB Source.Outputs[OLE DB Source Output].Columns[QuestionType]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;QuestionType&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Derived Column.Outputs[Derived Column Output].Columns[source_system_code]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;source_system_code&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 2&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;true&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn&gt;start_date&lt;/StartDateColumn&gt;
+  &lt;EndDateColumn&gt;end_date&lt;/EndDateColumn&gt;
+  &lt;DateVariable&gt;System::ContainerStartTime&lt;/DateVariable&gt;
+  &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF_Questions\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

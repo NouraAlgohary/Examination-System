@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LocalHost.ExaminationSystemDB"
+  DTS:DTSID="{ECDD7765-8398-401C-90AC-76ADCAF45943}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=ExaminationSystemDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-ETL_DB_DWH-{ECDD7765-8398-401C-90AC-76ADCAF45943}LocalHost.ExaminationSystemDB;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
