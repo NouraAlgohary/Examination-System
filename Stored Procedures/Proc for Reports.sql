@@ -1,3 +1,4 @@
+
 -------------------------------------------------------------------------FirstReport--------------------------------------------
 Alter Procedure StudentAccordingToTrack  @TrackName VARCHAR(50) =NULL
 
@@ -41,6 +42,7 @@ END;
 
 
 EXEC CourseScore 360;
+
 --------------------------------------------------------------Third report-----------------------------------------------------
 Create Procedure Count_Instructor_Students @InstrctorID INT 
 WITH ENCRYPTION
@@ -116,3 +118,38 @@ CREATE PROC STUDENT_ANSWER @STUDENTID INT, @EXAMID INT
 
 EXEC STUDENT_ANSWER  @STUDENTID =360, @EXAMID=1;
 -------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------fifth1-----------------------------------
+Alter PROCEDURE EXAM_CHOICES @EXAMID INT
+AS
+BEGIN
+    WITH ExamQuestions AS (
+        SELECT
+            Q.QuestionID,
+            Q.QuestionTitle,
+            Q.CorrectAnswer,
+            C.Choices,
+            ROW_NUMBER() OVER (PARTITION BY Q.QuestionID ORDER BY (SELECT NULL)) AS RN
+        FROM
+            TakesExam E
+        JOIN
+            Questions Q ON E.QuestionID = Q.QuestionID
+        JOIN
+            Choices C ON C.QuestionID = Q.QuestionID
+        WHERE
+            E.EXAMID = @EXAMID
+    )
+    SELECT
+        QuestionTitle,
+        CorrectAnswer,
+        MAX(CASE WHEN RN = 1 THEN Choices END) AS Choice1,
+        MAX(CASE WHEN RN = 2 THEN Choices END) AS Choice2,
+        MAX(CASE WHEN RN = 3 THEN Choices END) AS Choice3
+    FROM
+        ExamQuestions
+    GROUP BY
+        QuestionID,
+        QuestionTitle,
+        CorrectAnswer;
+END;
+
+EXAM_CHOICES 2
