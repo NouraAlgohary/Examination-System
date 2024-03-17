@@ -6,8 +6,8 @@ https://github.com/NouraAlgohary/Examination-System/assets/103903785/ef0027cc-07
 
 ## Project Milestones
 - **Initial Planning**: Project scope, requirements, and milestones were defined.
-- [Database Design and Creation](#database-design-and-Creation): The entity-relationship diagram (ERD) and database schema were developed.
-- **[ETL Implementation (CSV to Database)](#ETL-Implementation-CSV-to-Database)**: ETL processes were implemented to efficiently transfer data from CSV files into the MS SQL Server database.
+- **Database Design and Creation**: The entity-relationship diagram (ERD) and database schema were developed.
+- **ETL Implementation (CSV to Database)**: ETL processes were implemented to efficiently transfer data from CSV files into the MS SQL Server database.
 - **Stored Procedures Implementation**: Stored procedures for database operations were designed and implemented.
 - **Data Warehouse (DWH) Design and Creation**: The schema and architecture for the Data Warehouse were designed.
 - **ETL Implementation (Database to Data Warehouse)**: Additional ETL processes were implemented to transfer data from the MS SQL Server database to a Data Warehouse (DWH).
