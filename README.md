@@ -90,7 +90,7 @@ The ETL (Extract, Transform, Load) process for transferring data from CSV files 
 ### Steps in ETL Implementation:
 
 1. **Data Extraction**:
-   - CSV files containing data related to students, courses, exams, instructors, and other relevant entities are sourced from external systems or generated through mock data generation tools like Mockaroo.
+   - CSV files containing data related to students, courses, exams, instructors, and other relevant entities are generated through mock data generation tools like Mockaroo.
    - Extracting data from CSV files involves reading the files using appropriate methods or libraries provided by programming languages or ETL tools.
 
 2. **Data Transformation**:
