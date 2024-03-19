@@ -138,7 +138,8 @@ Stored procedures have been created to facilitate CRUD operations on database ta
 
 ### Exam Generation
 
-A stored procedure automates the generation of exams within the system. This procedure selects random questions from the question bank based on predefined criteria such as course requirements, and student. It organizes selected questions into exams and assigns unique identifiers to each exam for tracking and management.
+A stored procedure automates the generation of exams within the system. This procedure selects random questions from the question bank based on predefined criteria such as course and student. Each exam consists of 10 multiple-choice questions (MCQs), which are dynamically included in the exam papers. The stored procedure organizes the selected questions into exam papers and assigns unique identifiers to each exam for tracking and management.
+
 
 ### Exam Answers
 
