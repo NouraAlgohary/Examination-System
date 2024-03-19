@@ -128,6 +128,36 @@ The ETL (Extract, Transform, Load) process for transferring data from CSV files 
 
 The successful implementation of ETL processes from CSV files to the MS SQL Server database lays the foundation for efficient data management and utilization within the Examination System.
 
+## 4. Stored Procedures Implementation
+
+Stored procedures play a crucial role in streamlining database operations and enhancing system functionality within the Examination System project. This section outlines the implementation of stored procedures for key functionalities, including CRUD operations (Create, Read, Update, Delete) on database tables and specific procedures for exam generation, handling exam answers, and conducting exam corrections.
+
+### Select, Insert, Update, and Delete Operations
+
+Stored procedures have been created to facilitate CRUD operations on database tables. These procedures encapsulate SQL queries and operations, promoting code reuse, security, and maintainability. Each CRUD operation has a corresponding stored procedure with parameters to specify input data and conditions for filtering, updating, or deleting records.
+
+### Exam Generation
+
+A stored procedure automates the generation of exams within the system. This procedure selects random questions from the question bank based on predefined criteria such as course requirements, and student. It organizes selected questions into exams and assigns unique identifiers to each exam for tracking and management.
+
+### Exam Answers
+
+Stored procedures handle exam answers submitted by students. These procedures validate and store student responses, associating them with the corresponding exam and student identifiers.
+
+### Exam Correction
+
+Stored procedures automate the correction of exams by grading student responses against predefined answer keys, calculating scores based on grading criteria, and generating feedback reports. They update student records with graded scores and performance metrics for further analysis and reporting.
+
+### Benefits of Stored Procedures Implementation
+
+- **Centralized Logic**: Stored procedures centralize database logic, reducing redundancy and promoting consistency in data manipulation operations.
+- **Enhanced Security**: Stored procedures offer an additional layer of security by controlling access to database functionality and limiting exposure to SQL injection attacks.
+- **Improved Performance**: Stored procedures can improve performance by reducing network traffic and optimizing query execution plans through parameterization and caching.
+- **Ease of Maintenance**: Centralized stored procedures simplify maintenance and updates, allowing for easier troubleshooting, debugging, and version control of database logic.
+
+The implementation of stored procedures within the Examination System project enhances efficiency, security, and maintainability in database operations, contributing to a robust and scalable system architecture.
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 ## *To be continued*
 -------------------------------------------------------------------------------------------------------------------------------------------------
