@@ -65,7 +65,7 @@ The creation of the database for the Examination System involved several steps t
 3. **Execution of SQL Script**:
    - The SQL script was executed using SQL Server Management Studio (SSMS) or another SQL client tool. This process created the database and its associated objects according to the specifications outlined in the script.
 
-You can find the script [here]()
+You can find the script [here](https://github.com/NouraAlgohary/Examination-System/blob/main/1.%20Database/Creation%20Queries/1-%20Compelete%20DB.sql)
 
 6. **Data Population**:
    - Mockaroo was configured to generate sample data for entities such as students, courses, exams, and instructors. The generated data was exported to CSV files for further processing.
@@ -84,41 +84,47 @@ You can find the script [here]()
 
 The creation of the database using Microsoft SQL Server laid a solid foundation for storing, managing, and securing data within the Examination System.
 
-## 3. ETL Implementation (CSV to Database)
-The ETL (Extract, Transform, Load) process for transferring data from CSV files to the MS SQL Server database is a crucial component of the Examination System's data management strategy. This process involves extracting data from CSV files, transforming it to meet database schema requirements, and loading it into the appropriate database tables.
+## 3. ETL Implementation (CSV to SQL Server Using SSIS)
 
-### Steps in ETL Implementation:
+The ETL (Extract, Transform, Load) process for transferring data from CSV files to the Microsoft SQL Server database was a pivotal step in establishing the Examination System's database. This section provides a detailed explanation of the ETL implementation using SQL Server Integration Services (SSIS), focusing on extracting data from CSV files and loading it into SQL Server.
 
-1. **Data Extraction**:
-   - CSV files containing data related to students, courses, exams, instructors, and other relevant entities are generated through mock data generation tools like Mockaroo.
-   - Extracting data from CSV files involves reading the files using appropriate methods or libraries provided by programming languages or ETL tools.
+### Tools Used:
 
-2. **Data Transformation**:
-   - Once data is extracted, it undergoes transformation to ensure compatibility with the database schema.
-   - Data transformation may include cleaning, validating, standardizing, and formatting data to adhere to predefined data types, constraints, and business rules.
-   - For example, converting date formats, handling missing or erroneous data, and mapping CSV columns to database table columns are common transformation tasks.
+1. **SQL Server Integration Services (SSIS)**: SSIS served as the core tool for orchestrating the ETL process. SSIS provides a comprehensive platform for designing, deploying, and managing ETL workflows, making it well-suited for data integration tasks.
 
-3. **Data Loading**:
-   - Transformed data is loaded into the MS SQL Server database using INSERT statements, bulk load utilities, or ETL tools.
-   - Loading data into the appropriate tables involves mapping CSV columns to corresponding database table columns and ensuring data integrity through primary key constraints and referential integrity.
+2. **Microsoft SQL Server**: The destination database for the ETL process was hosted on Microsoft SQL Server.
 
-### Tools and Technologies:
-- **Programming Languages**: Python, Java, or any language with CSV parsing capabilities may be used for ETL scripting.
-- **ETL Tools**: Commercial ETL tools like Informatica, Talend, or open-source solutions like Apache NiFi or Apache Airflow can streamline the ETL process.
-- **Bulk Load Utilities**: SQL Server's BULK INSERT or BCP (Bulk Copy Program) utilities enable efficient loading of large volumes of data into the database.
-- **Database Connectivity Libraries**: Libraries such as pyodbc or JDBC facilitate connections to the MS SQL Server database for data loading.
+### ETL Implementation Steps:
 
-### Considerations:
-- **Error Handling**: Implement robust error handling mechanisms to address data validation errors, file format discrepancies, or connectivity issues during the ETL process.
-- **Performance Optimization**: Optimize ETL performance by batch processing, parallelization, and leveraging database features like indexing and partitioning.
-- **Data Quality Assurance**: Conduct thorough data quality checks and validation to ensure accuracy and completeness of the loaded data.
-- **Incremental Loading**: Consider implementing incremental loading strategies to update the database with only new or modified data from subsequent CSV files, reducing processing time and resource overhead.
+1. **Project Setup**:
+   - A new SSIS project was created within Visual Studio to encapsulate the ETL workflows.
 
-### Benefits of ETL Implementation:
-- **Data Consistency**: ETL ensures that data imported into the database conforms to predefined standards, enhancing data consistency and integrity.
-- **Automation**: Automated ETL processes streamline data loading tasks, reducing manual effort and minimizing the risk of human error.
-- **Scalability**: ETL workflows can be scaled to handle increasing data volumes and accommodate future growth of the Examination System.
-- **Real-time Insights**: Timely data loading enables stakeholders to access up-to-date information for decision-making and analysis.
+2. **Data Source Configuration**:
+   - CSV files containing the source data were identified and configured as the data source for the SSIS package. Connection managers were established to connect to the CSV files.
+
+3. **Data Extraction**:
+   - SSIS Data Flow Tasks were employed to extract data from the CSV files. Flat File Source components within the Data Flow Task were configured to read data from the CSV files and pass it downstream for further processing.
+
+4. **Data Transformation**:
+   - Transformation tasks were applied to the extracted data to prepare it for loading into the SQL Server database. This involved cleansing, validating, and formatting the data as per the requirements of the target database schema.
+   - SSIS provides a wide range of transformation components, such as Derived Column, Data Conversion, and Lookup, to facilitate various data manipulation operations.
+
+5. **Data Loading**:
+   - The transformed data was loaded into the SQL Server database tables using SSIS Destination components. SQL Server Destination components were configured to map the incoming data columns to the corresponding database table columns.
+
+6. **Error Handling and Logging**:
+   - SSIS includes built-in features for error handling and logging to capture and manage errors encountered during the ETL process. Error outputs and logging mechanisms were configured to track data validation errors, integrity violations, and other issues.
+
+7. **Execution and Monitoring**:
+   - The SSIS package was executed to initiate the ETL process. Execution options, debugging settings, and logging levels were configured as needed to monitor the progress and performance of the ETL workflow.
+   - SSIS logging and monitoring tools were utilized to track the execution status, diagnose errors, and optimize the ETL process for efficiency.
+
+### Benefits of Using SSIS for ETL:
+
+- **Visual Development Environment**: SSIS offers a visual development environment with drag-and-drop functionality, enabling easy design and management of complex ETL workflows.
+- **Performance Optimization**: SSIS provides features for parallel processing, data streaming, and in-memory operations, facilitating high-performance ETL solutions.
+- **Scalability and Flexibility**: SSIS supports scalable and flexible ETL architectures, accommodating diverse data sources and large data volumes with ease.
+- **Integration with SQL Server**: SSIS seamlessly integrates with Microsoft SQL Server, offering native connectivity and optimized performance for SQL Server databases.
 
 The successful implementation of ETL processes from CSV files to the MS SQL Server database lays the foundation for efficient data management and utilization within the Examination System.
 
