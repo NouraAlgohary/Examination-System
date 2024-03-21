@@ -158,6 +158,42 @@ Stored procedures automate the correction of exams by grading student responses 
 
 The implementation of stored procedures within the Examination System project enhances efficiency, security, and maintainability in database operations, contributing to a robust and scalable system architecture.
 
+## 4. Data Warehouse (DWH) Design and Creation Using SSMS
+
+The Data Warehouse (DWH) stands as a vital cornerstone within the Examination System project, acting as a centralized hub for consolidated and organized data from diverse origins. This segment delves into the methodology of crafting and establishing the Data Warehouse via SQL Server Management Studio (SSMS), shedding light on pivotal facets of its structure and deployment.
+
+### Design Phase
+
+1. **Requirement Analysis**: Initially, a thorough analysis of reporting and analytical needs was conducted to understand the data requirements of the Examination System stakeholders.
+   
+2. **Data Modeling**: Based on the requirements, a dimensional model was designed to support reporting needs. This included identifying fact tables, dimension tables, and defining relationships between them.
+
+![DWH drawio](https://github.com/NouraAlgohary/Examination-System/assets/103903785/c1e9e98d-6e07-4044-a699-2d688d644ea7)
+
+
+4. **ETL Planning**: The Extract, Transform, Load (ETL) processes required to populate the Data Warehouse from source systems were planned. SSMS was used to create SSIS packages for ETL operations.
+
+### Creation Process
+
+1. **Database Creation**: Using SSMS, the Data Warehouse database schema was created based on the dimensional model designed during the planning phase. Tables were created to represent fact and dimension entities.
+
+3. **ETL Development**: SSMS was used to develop SSIS packages for ETL processes. These packages extracted data from source systems, transformed it according to the dimensional model, and loaded it into the Data Warehouse tables.
+
+4. **Data Quality Assurance**: Data quality checks and validation processes were implemented within SSIS packages to ensure the accuracy and integrity of data loaded into the Data Warehouse.
+
+### Benefits of Data Warehouse Implementation
+
+- **Centralized Data**: The Data Warehouse consolidates data from multiple sources into a single repository, providing a unified view of organizational data.
+
+- **Improved Reporting**: With a structured data model in place, SSMS facilitates efficient reporting and analysis, enabling stakeholders to derive valuable insights from data.
+
+- **Historical Analysis**: Historical data stored in the Data Warehouse allows for trend analysis and longitudinal studies over time.
+
+- **Scalability and Flexibility**: SSMS provides scalability and flexibility in managing the Data Warehouse, allowing it to accommodate growing data volumes and evolving business requirements.
+
+- **Data Governance and Security**: SSMS offers robust data governance and security features, ensuring data privacy, integrity, and compliance with regulatory requirements.
+
+The use of SSMS for Data Warehouse design and creation in the Examination System project ensures a robust and scalable architecture, empowering stakeholders with timely and actionable insights.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 ## *To be continued*
